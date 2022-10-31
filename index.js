@@ -1,6 +1,6 @@
 var http = require('http');
 http.createServer(function (req, res) {
     console.log(`Just got a request at ${req.url}!`)
-    res.write('Yo!');
+    res.write( { "slackUsername": "Akeem Oyebanji", "backend": yes, "age": 30, "bio": "Full Developer" });
     res.end();
 }).listen(process.env.PORT || 3000);
